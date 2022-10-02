@@ -1,0 +1,30 @@
+{
+  "name": "nasa-pr",
+  "version": "1.0.0",
+  "description": "NASA Mission Control",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "install-server": "npm i --prefix server",
+    "install-client": "npm i --prefix client",
+    "server": "npm run watch npm --prefix server",
+    "client": "npm start npm --prefix client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfsvet/nasa-pr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elfsvet/nasa-pr/issues"
+  },
+  "homepage": "https://github.com/elfsvet/nasa-pr#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
