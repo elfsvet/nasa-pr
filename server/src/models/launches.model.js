@@ -1,3 +1,4 @@
+// model works with data
 const launches = new Map();
 
 // MAPS
@@ -15,6 +16,10 @@ const launch = {
 
 launches.set(launch.flightNumber, launch);
 
+function getAllLaunches(){
+    return Array.from(launches.values())
+}
+
 module.exports = {
-  launches,
+  getAllLaunches,
 };
